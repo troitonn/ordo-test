@@ -867,6 +867,31 @@ const Home: React.FC<{ onStartDiagnosis: () => void, onNavigate: (view: ViewType
         </div>
       </section>
 
+      <section id="faq" className="py-24 px-6 scroll-mt-24">
+      <div className="container mx-auto max-w-4xl">
+        <div className="text-center mb-16">
+          <h2 className="text-sm font-bold uppercase tracking-[0.3em] text-emerald-500 mb-4">
+            Perguntas Frequentes
+          </h2>
+          <h3 className="text-4xl md:text-5xl font-bold text-white tracking-tight">
+            Dúvidas Estratégicas
+          </h3>
+        </div>
+    
+        <div className="space-y-6">
+          {FAQ.map((item, i) => (
+            <div key={i} className="glass p-6 rounded-3xl">
+              <h4 className="text-lg font-bold text-white mb-2">
+                {item.question}
+              </h4>
+              <p className="text-neutral-400 leading-relaxed">
+                {item.answer}
+              </p>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
 
       <section id="contato" className="py-24 px-6 scroll-mt-24">
         <div className="container mx-auto max-w-5xl glass p-12 md:p-20 rounded-[60px] text-center relative overflow-hidden">
