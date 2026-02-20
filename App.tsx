@@ -826,6 +826,50 @@ const Home: React.FC<{ onStartDiagnosis: () => void, onNavigate: (view: ViewType
         </div>
       </section>
 
+      </section>
+
+      {/* FUNDADORAS */}
+      <section className="py-24 px-6 scroll-mt-24">
+        <div className="container mx-auto max-w-7xl">
+          <div className="text-center mb-16">
+            <h2 className="text-sm font-bold uppercase tracking-[0.3em] text-emerald-500 mb-4">
+              Liderança
+            </h2>
+            <h3 className="text-4xl md:text-5xl font-bold text-white tracking-tight">
+              Fundadoras
+            </h3>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
+            {FOUNDERS.map((founder, i) => (
+              <div
+                key={i}
+                className="flex flex-col items-center glass p-10 rounded-[40px] text-center group hover:border-white/20 transition-all"
+              >
+                <img
+                  src={founder.image}
+                  alt={founder.name}
+                  className="w-40 h-40 rounded-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 ring-4 ring-neutral-800 mb-6"
+                />
+
+                <h4 className="text-2xl font-bold text-white mb-2">
+                  {founder.name}
+                </h4>
+
+                <p className="text-emerald-500 font-bold uppercase tracking-widest text-[11px] mb-4">
+                  {founder.role}
+                </p>
+
+                <p className="text-neutral-400 text-sm leading-relaxed">
+                  {founder.description}
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+
       <section id="contato" className="py-24 px-6 scroll-mt-24">
         <div className="container mx-auto max-w-5xl glass p-12 md:p-20 rounded-[60px] text-center relative overflow-hidden">
           <div className="absolute top-0 right-0 w-64 h-64 bg-emerald-500/10 blur-[100px] rounded-full -translate-y-1/2 translate-x-1/2"></div>
