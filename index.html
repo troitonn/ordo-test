@@ -27,29 +27,21 @@
             -webkit-text-fill-color: transparent;
         }
 
-        /* --- FORÇAR VISIBILIDADE DA LOGO NO TOPO --- */
-        
-        /* 1. Remove o fundo branco/bloco sólido e força a logo a aparecer */
-        header img, nav img, [class*="Navbar"] img {
-            mix-blend-mode: screen !important;
-            filter: brightness(1) invert(0) !important;
-            opacity: 1 !important;
-            display: block !important;
-            visibility: visible !important;
-            max-height: 40px !important; /* Ajusta o tamanho se estiver gigante */
-            width: auto !important;
+        /* --- SOLUÇÃO PARA A LOGO E BRASÃO --- */
+
+        /* 1. Remove o bloco sólido branco e torna o fundo transparente via código */
+        header img, nav img, .logo-transparent {
+            mix-blend-mode: screen !important; /* Faz o preto da imagem desaparecer no fundo escuro */
+            filter: brightness(1.2) !important; /* Realça o branco da logo */
+            background: transparent !important;
         }
 
-        /* 2. Se a logo sumiu por estar preta no fundo preto, este seletor a torna branca */
-        .logo-transparent {
-            filter: invert(1) brightness(2) !important;
-        }
-
-        /* 3. Garante que o Brasão grande preencha o espaço sem bordas pretas extras */
+        /* 2. Garante que o Brasão na seção 'Sobre' não tenha bordas sobrando */
         #root img[src*="OrdoBrasao"] {
             object-fit: contain !important;
             width: 100% !important;
             height: 100% !important;
+            background-color: transparent !important;
         }
     </style>
 <script type="importmap">
