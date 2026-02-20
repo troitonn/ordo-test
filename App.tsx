@@ -35,19 +35,18 @@ const Logo: React.FC<{ className?: string; invert?: boolean }> = ({
     src="/OrdoBrasao.PNG"
     alt="ORDO Advisory" 
     className={`${className} object-contain`}
-    // Removido o filtro fixo que estava transformando a logo em um bloco branco
-    style={invert ? { filter: 'brightness(0) invert(1)' } : {}}
+    // Ajustado: invert(1) deixa branco, sem o brilho excessivo que estourava a imagem
+    style={invert ? { filter: 'invert(1)' } : {}}
   />
 );
 
-const Brasao: React.FC<{ className?: string }> = ({ className = "w-full max-w-[450px]" }) => (
-  <div className={`flex items-center justify-center bg-transparent ${className}`}>
+const Brasao: React.FC<{ className?: string }> = ({ className = "w-full max-w-[500px]" }) => (
+  <div className={`flex items-center justify-center ${className}`}>
     <img 
       src="/OrdoBrasao.PNG"
       alt="ORDO Brasão" 
-      className="w-full h-auto object-contain drop-shadow-2xl"
-      // Removido o bg-neutral-900 e o arredondamento rígido do container 
-      // para que a logo respire no fundo do site
+      // h-full e w-full com object-cover garantem que a imagem preencha o container arredondado
+      className="w-full h-auto object-cover rounded-[40px] md:rounded-[58px]"
     />
   </div>
 );
