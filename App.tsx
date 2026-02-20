@@ -29,24 +29,30 @@ type ViewType = 'home' | 'terms' | 'cookies' | 'privacy' | 'contactForm' | 'stru
 
 const Logo: React.FC<{ className?: string; invert?: boolean }> = ({ 
   className = "h-8 md:h-10", 
-  invert = false 
+  invert = true 
 }) => (
-  <img 
-    src="/OrdoBrasao.PNG"
-    alt="ORDO Advisory" 
-    className={`${className} object-contain`}
-    // Ajustado: invert(1) deixa branco, sem o brilho excessivo que estourava a imagem
-    style={invert ? { filter: 'invert(1)' } : {}}
+  <div 
+    className={`${className} aspect-square bg-white`}
+    style={{
+      // Usamos a imagem como máscara para esconder o fundo quadrado
+      maskImage: 'url("/OrdoBrasao.PNG")',
+      WebkitMaskImage: 'url("/OrdoBrasao.PNG")',
+      maskMode: 'luminance',
+      WebkitMaskMode: 'luminance',
+      maskSize: 'contain',
+      WebkitMaskSize: 'contain',
+      maskRepeat: 'no-repeat',
+      WebkitMaskRepeat: 'no-repeat'
+    }}
   />
 );
 
-const Brasao: React.FC<{ className?: string }> = ({ className = "w-full max-w-[500px]" }) => (
-  <div className={`flex items-center justify-center ${className}`}>
+const Brasao: React.FC<{ className?: string }> = ({ className = "w-full max-w-[500px] aspect-square" }) => (
+  <div className={`flex items-center justify-center overflow-hidden rounded-[40px] md:rounded-[58px] ${className}`}>
     <img 
       src="/OrdoBrasao.PNG"
       alt="ORDO Brasão" 
-      // h-full e w-full com object-cover garantem que a imagem preencha o container arredondado
-      className="w-full h-auto object-cover rounded-[40px] md:rounded-[58px]"
+      className="w-full h-full object-cover"
     />
   </div>
 );
