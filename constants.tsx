@@ -50,19 +50,22 @@ export const MENTORS: Person[] = [
     name: "Fernando Candido",
     role: "Presidente Pagare Instituição de Pagamento",
     description: "Referência no mercado de Instituições de Pagamento, acompanha de perto nossa jornada e contribui com visão estratégica profunda sobre estrutura regulatória e fluxos operacionais complexos.",
-    image: "https://picsum.photos/seed/fernando/400/400"
+    // Nome exato do arquivo na raiz
+    image: "/Fernando - Pagare.jpeg" 
   },
   {
     name: "Luis Henrique Archanjo",
     role: "Ex-Fundador Cronos Bank",
     description: "Empreendedor que foi ponto de virada na trajetória das fundadoras, proporcionando experiência prática em mais de 120 projetos no ecossistema fintech.",
-    image: "https://picsum.photos/seed/luis/400/400"
+    // Nome exato do arquivo na raiz
+    image: "/Luis Henrique Archanjo.jpg" 
   },
   {
     name: "Henrique Costa",
     role: "CTO & Fundador da Evostack",
-    description: "Estrategista em inovação e parceiro de longa data na construção de ecossistemas digitais. Nossa colaboração contínua une programação de alta performance, UX e IA aplicada para criar fintechs de alta eficiência.",
-    image: "https://picsum.photos/seed/henrique/400/400"
+    description: "Estrategista em inovação e parceiro de longa data na construção de ecossistemas digitais.",
+    // Se você tiver a foto dele no Git, mude aqui também
+    image: "/Henrique Costa.jpeg" 
   }
 ];
 
@@ -71,13 +74,13 @@ export const FOUNDERS: Person[] = [
     name: "Letícia Fita",
     role: "Fundadora & Estrategista",
     description: "Com mais de 6 anos de atuação e participação em mais de 200 projetos BaaS. Especialista em desenho estratégico e interface com parceiros de mercado. Na Ordo, encontrou um propósito maior: construir estruturas sólidas antes da escala.",
-    image: "https://picsum.photos/seed/leticia/400/400"
+    image: "/leticiafita.jpg"
   },
   {
     name: "Lívia Fita",
     role: "Co-Fundadora & Executiva Operacional",
     description: "Com mais de 5 anos de experiência no setor, atua na organização, execução e acompanhamento estratégico dos projetos. Reconhecida pela capacidade de transformar ideias em estruturas viáveis.",
-    image: "https://picsum.photos/seed/livia/400/400"
+    image: "Lívia Fita.jpg"
   }
 ];
 
