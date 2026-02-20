@@ -50,22 +50,19 @@ export const MENTORS: Person[] = [
     name: "Fernando Candido",
     role: "Presidente Pagare Instituição de Pagamento",
     description: "Referência no mercado de Instituições de Pagamento, acompanha de perto nossa jornada e contribui com visão estratégica profunda sobre estrutura regulatória e fluxos operacionais complexos.",
-    // Nome exato do arquivo na raiz
-    image: "/FernandoPagare.jpeg" 
+    image: "/FernandoPagare.jpeg"
   },
   {
     name: "Luis Henrique Archanjo",
     role: "Ex-Fundador Cronos Bank",
     description: "Empreendedor que foi ponto de virada na trajetória das fundadoras, proporcionando experiência prática em mais de 120 projetos no ecossistema fintech.",
-    // Nome exato do arquivo na raiz
-    image: "/Luis Henrique Archanjo.jpg" 
+    image: "/LuisHenriqueArchanjo.jpg"
   },
   {
     name: "Henrique Costa",
     role: "CTO & Fundador da Evostack",
-    description: "Estrategista em inovação e parceiro de longa data na construção de ecossistemas digitais.",
-    // Se você tiver a foto dele no Git, mude aqui também
-    image: "/HenriqueCosta.jpeg" 
+    description: "Estrategista em inovação e parceiro de longa data na construção de ecossistemas digitais. Nossa colaboração contínua une programação de alta performance, UX e IA aplicada para criar fintechs de alta eficiência.",
+    image: "/HenriqueCosta.jpeg"
   }
 ];
 
@@ -80,7 +77,7 @@ export const FOUNDERS: Person[] = [
     name: "Lívia Fita",
     role: "Co-Fundadora & Executiva Operacional",
     description: "Com mais de 5 anos de experiência no setor, atua na organização, execução e acompanhamento estratégico dos projetos. Reconhecida pela capacidade de transformar ideias em estruturas viáveis.",
-    image: "Lívia Fita.jpg"
+    image: "/LiviaFita.jpg"
   }
 ];
 
