@@ -51,7 +51,7 @@ export const MENTORS: Person[] = [
     role: "Presidente Pagare Instituição de Pagamento",
     description: "Referência no mercado de Instituições de Pagamento, acompanha de perto nossa jornada e contribui com visão estratégica profunda sobre estrutura regulatória e fluxos operacionais complexos.",
     // Nome exato do arquivo na raiz
-    image: "/Fernando - Pagare.jpeg" 
+    image: "/FernandoPagare.jpeg" 
   },
   {
     name: "Luis Henrique Archanjo",
@@ -65,7 +65,7 @@ export const MENTORS: Person[] = [
     role: "CTO & Fundador da Evostack",
     description: "Estrategista em inovação e parceiro de longa data na construção de ecossistemas digitais.",
     // Se você tiver a foto dele no Git, mude aqui também
-    image: "/Henrique Costa.jpeg" 
+    image: "/HenriqueCosta.jpeg" 
   }
 ];
 
