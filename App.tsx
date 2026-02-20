@@ -27,23 +27,26 @@ import { SERVICES, MENTORS, FOUNDERS, FAQ } from './constants';
 
 type ViewType = 'home' | 'terms' | 'cookies' | 'privacy' | 'contactForm' | 'structure' | 'baas' | 'consultancy';
 
-const Logo: React.FC<{ className?: string; invert?: boolean }> = ({ className = "h-12", invert = true }) => (
+const Logo: React.FC<{ className?: string; invert?: boolean }> = ({ 
+  className = "h-8 md:h-10", 
+  invert = false 
+}) => (
   <img 
     src="/OrdoBrasao.PNG"
     alt="ORDO Advisory" 
-    className={`${className} ${invert ? 'brightness-[100] invert' : ''}`}
-    // Removi o estilo inline de filtro para que a imagem original apareça se invert for false
+    className={`${className} object-contain transition-all`}
+    // Se invert for true, ela fica branca. Se false, mantém a cor original (preto/cinza)
     style={invert ? { filter: 'brightness(0) invert(1)' } : {}}
   />
 );
 
-const Brasao: React.FC<{ className?: string }> = ({ className = "w-full h-full" }) => (
-  <div className={`flex items-center justify-center bg-neutral-900 rounded-[58px] ${className}`}>
+const Brasao: React.FC<{ className?: string }> = ({ className = "w-full max-w-[400px] aspect-square" }) => (
+  <div className={`flex items-center justify-center bg-neutral-900 rounded-[40px] md:rounded-[58px] p-8 ${className}`}>
     <img 
       src="/OrdoBrasao.PNG"
       alt="ORDO Brasão" 
-      className="w-2/3 h-auto opacity-80"
-      style={{ objectFit: 'contain' }} // Removido o invert fixo para preservar a cor original se desejar
+      className="w-full h-full object-contain"
+      // Removida opacidade para a logo brilhar no fundo escuro
     />
   </div>
 );
