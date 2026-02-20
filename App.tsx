@@ -29,7 +29,7 @@ type ViewType = 'home' | 'terms' | 'cookies' | 'privacy' | 'contactForm' | 'stru
 
 const Logo: React.FC<{ className?: string; invert?: boolean }> = ({ className = "h-12", invert = true }) => (
   <img 
-    src="/Ordo Brasão.PNG" // Caminho para o arquivo na raiz
+    src="/OrdoBrasao.PNG"
     alt="ORDO Advisory" 
     className={`${className} ${invert ? 'brightness-[100] invert' : ''}`}
     // Removi o estilo inline de filtro para que a imagem original apareça se invert for false
@@ -40,7 +40,7 @@ const Logo: React.FC<{ className?: string; invert?: boolean }> = ({ className = 
 const Brasao: React.FC<{ className?: string }> = ({ className = "w-full h-full" }) => (
   <div className={`flex items-center justify-center bg-neutral-900 rounded-[58px] ${className}`}>
     <img 
-      src="/Ordo Brasão.PNG" 
+      src="/OrdoBrasao.PNG"
       alt="ORDO Brasão" 
       className="w-2/3 h-auto opacity-80"
       style={{ objectFit: 'contain' }} // Removido o invert fixo para preservar a cor original se desejar
